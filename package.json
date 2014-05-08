@@ -1,0 +1,16 @@
+{
+  "name": "socket-header",
+  "version": "0.1.0",
+  "description": "explorations in socket streaming page assets in header.",
+  "main": "script/index.js",
+  "author": "Todd Anderson",
+  "license": "MIT",
+  "devDependencies": {
+    "http": "0.0.0",
+    "connect": "^2.15.0",
+    "socket.io": "^0.9.16",
+    "socket.io-client": "^0.9.16",
+    "glob": "^3.2.9",
+    "node-promise": "^0.5.10"
+  }
+}

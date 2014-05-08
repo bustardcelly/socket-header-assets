@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+  <head>
+    <script src="/lib/socket.io.min.js"></script>
+    <script>
+      var socket = io.connect('http://localhost');
+      var assetsLoading = true;
+      var head = document.querySelector('head');
+      socket.on('assets', function (data) {
+        if(data.hasOwnProperty('scripts')) {
+          for(var script in data.scripts) {
+            console.log('injecting: ' + script + '.');
+            eval(data.scripts[script]);
+          }
+        }
+        if(data.hasOwnProperty('styles')) {
+          for(var style in data.styles) {
+            console.log('injecting: ' + style + '.');
+            var el = document.createElement('style');
+            el.textContent = data.styles[style];
+            head.appendChild(el);
+          }
+        }
+        socket.disconnect();
+        assetsLoading = false;
+      });
+    </script>
+  </head>
+  <body>
+    <div><p>hello, world!</p></div>
+  </body>
+</html
