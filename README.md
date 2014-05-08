@@ -28,7 +28,7 @@ I used [webpagetest](http://www.webpagetest.org/) just to get a quick waterfall.
 * index.html (socket) : http://www.webpagetest.org/result/140508_23_YPQ/1/details/
 * index2.html (normal) : http://www.webpagetest.org/result/140508_XZ_YPW/1/details/
 
-Still parsing the data to gain insight into if this solution is even viable of a complete crock :)
+Still parsing the data to gain insight into if this solution is even viable or a complete crock :)
 
 cons
 ---
