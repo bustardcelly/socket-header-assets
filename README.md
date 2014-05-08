@@ -40,3 +40,4 @@ There are several cons i can think of using a socket to load page assets:
 * currently no order of dynamically adding styles
 * socket support (ie, fallback is just HTTP polling anyway)
 * Flash Of Unstyled Content (FOUC)
+* No cacheing
